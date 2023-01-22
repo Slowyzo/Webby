@@ -5,13 +5,12 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    border: 2px dotted black;
     background-color: rgb(46, 138, 46);
   }
 
 ul {
     list-style: none;
-    margin: 0px;
+    margin-right: 20px;
     padding: 0px;
     gap: 20px;
     display: flex;
@@ -22,15 +21,19 @@ ul {
 button {
     background-color: rgb(0, 78, 0);
     color: rgb(221, 255, 221);
-    padding: 4px;
+    padding: 8px;
+    margin-top: 6px;
     margin-right: 10px;
     align-self:flex-end;
+    border-style: outset 3;
+    border-radius: 10px;
 }
 
 a {
     text-decoration: none;
     color: rgb(183, 255, 183);
     font-weight: bold;
+    font-size: 16px;
 }
 
 
@@ -40,7 +43,7 @@ a {
  .content3text, .box, .boxleft {
     display: flex;
     padding: 4px;
-    gap: 8px;
+    gap: 4px;
     align-items: center;
 }
 
@@ -54,18 +57,17 @@ a {
 }
 
 .header {
-    border: 2px solid red;
-    max-height: 60px;
+    max-height: 100px;
     justify-content: space-between;
 }
 
 .content1 {
-    border: 2px solid orange;
     flex-grow: 1, 1, 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: 6px;
 
 }
 
@@ -89,7 +91,6 @@ a {
 }
 
 .content2 {
-    border: 2px solid yellow;
     background-color: rgb(221, 255, 221);
     color: rgb(2, 80, 2);
     flex-direction: column;
@@ -101,10 +102,17 @@ a {
     font-weight: bold;
     color: rgb(2, 80, 2);
     text-align: center;
+    padding: 16px;
+}
+
+.profiles {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
 }
 
 .froad {
-    max-width: 60px;
+   flex-direction: column;
 }
 
 .content3text {
