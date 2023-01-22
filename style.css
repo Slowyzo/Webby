@@ -1,0 +1,129 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 2px dotted black;
+    background-color: rgb(46, 138, 46);
+  }
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+button {
+    background-color: rgb(0, 78, 0);
+    color: rgb(221, 255, 221);
+    padding: 4px;
+    margin-right: 10px;
+    align-self:flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(183, 255, 183);
+    font-weight: bold;
+}
+
+
+.header, .content1, .content2,
+ .content3text, .link, .footer,
+ .leftinfo, .profiles, .froad,
+ .content3text, .box, .boxleft {
+    display: flex;
+    padding: 4px;
+    gap: 8px;
+    align-items: center;
+}
+
+.content1, .content2, .content3text {
+    flex-grow: 1;
+}
+
+.header, .link, .footer {
+    flex: 0, 0, auto;
+    flex-direction: row;
+}
+
+.header {
+    border: 2px solid red;
+    max-height: 60px;
+    justify-content: space-between;
+}
+
+.content1 {
+    border: 2px solid orange;
+    flex-grow: 1, 1, 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.leftinfo {
+    flex-direction: column;
+    max-width: 300px;
+    align-items: flex-start;
+}
+
+.title1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(221, 255, 221);
+    text-align: left;
+}
+
+.blurb {
+    font-size: 16px;
+    color: rgb(221, 255, 221);
+    word-wrap: normal;
+}
+
+.content2 {
+    border: 2px solid yellow;
+    background-color: rgb(221, 255, 221);
+    color: rgb(2, 80, 2);
+    flex-direction: column;
+    padding: 8px;
+}
+
+.title2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(2, 80, 2);
+    text-align: center;
+}
+
+.froad {
+    max-width: 60px;
+}
+
+.content3text {
+    border: 2px solid green;
+    background-color: rgb(221, 255, 221);
+    color: rgb(2, 80, 2);
+}
+
+.link {
+    border: 2px solid blue;
+    max-height: 100px;
+    background-color: rgb(221, 255, 221);
+}
+
+.box {
+    background-color: rgb(46, 138, 46);
+}
+
+.footer {
+    border: 2px solid blueviolet;
+    max-height: 60px;
+}
