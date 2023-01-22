@@ -5,7 +5,12 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    background-image: url(./images/darkleavesbackground.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(46, 138, 46);
+    
   }
 
 ul {
@@ -36,6 +41,15 @@ a {
     font-size: 16px;
 }
 
+img {
+    border: 1px solid rgb(183, 255, 183);
+    border-radius: 8px;
+}
+
+.logo img {
+    border: none;
+}
+
 
 .header, .content1, .content2,
  .content3text, .link, .footer,
@@ -56,8 +70,12 @@ a {
     flex-direction: row;
 }
 
-.header {
+.header, .footer {
     max-height: 100px;
+    background-color: rgb(46, 138, 46);
+}
+
+.header {
     justify-content: space-between;
 }
 
@@ -68,24 +86,26 @@ a {
     align-items: center;
     gap: 30px;
     padding: 6px;
+    background-color: rgb(46, 138, 46);
+    border-bottom: 5px ridge rgb(2, 80, 2);
 
 }
 
 .leftinfo {
     flex-direction: column;
-    max-width: 300px;
+    max-width: 500px;
     align-items: flex-start;
 }
 
 .title1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     color: rgb(221, 255, 221);
     text-align: left;
 }
 
 .blurb {
-    font-size: 16px;
+    font-size: 24px;
     color: rgb(221, 255, 221);
     word-wrap: normal;
 }
@@ -95,6 +115,7 @@ a {
     color: rgb(2, 80, 2);
     flex-direction: column;
     padding: 8px;
+    border-bottom: 5px ridge rgb(2, 80, 2);
 }
 
 .title2 {
@@ -113,25 +134,51 @@ a {
 
 .froad {
    flex-direction: column;
+   font-size: 18px;
 }
 
 .content3text {
-    border: 2px solid green;
-    background-color: rgb(221, 255, 221);
-    color: rgb(2, 80, 2);
+    background-color: transparent;
+    color: rgb(183, 255, 183);
+    flex-direction: column;
+    align-self: center;
+    font-size: 24px;
+    margin: 60px;
+    max-width: 500px;
+}
+.quote {
+    text-align: justify;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.signature {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-style: italic;
+    text-align: right;
 }
 
 .link {
-    border: 2px solid blue;
-    max-height: 100px;
-    background-color: rgb(221, 255, 221);
+    background-color: transparent;
+    justify-content: center;
+    padding: 80px;
 }
 
 .box {
     background-color: rgb(46, 138, 46);
+    max-width: 900px;
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.boxleft {
+    flex-direction: column;
 }
 
 .footer {
-    border: 2px solid blueviolet;
-    max-height: 60px;
+    justify-content: center;
+    color: rgb(183, 255, 183);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px;
 }
