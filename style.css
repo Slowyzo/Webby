@@ -5,18 +5,17 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-image: url(./images/darkleavesbackground.jpg);
-    background-position: bottom;
+    background-image: url(./images/c-darkleavesbackground.jpg);
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(20, 75, 52);
-    
-  }
+    font-weight: 500;
+ }
 
 ul {
     list-style: none;
     margin-right: 20px;
-    font-size: 20px;
     padding: 0px;
     gap: 20px;
     display: flex;
@@ -165,7 +164,7 @@ img {
 }
 
 .link {
-    background-color: transparent;
+    background-color:  rgb(221, 255, 221);
     justify-content: center;
     padding: 80px;
 }
@@ -176,6 +175,7 @@ img {
     padding: 30px;
     flex-direction: column;
     border-radius: 8px;
+    border: 3px ridge rgb(20, 75, 52);
 }
 
 .boxleft {
@@ -188,4 +188,5 @@ img {
     font-weight: bold;
     font-size: 16px;
     padding: 16px;
+    border-top: 5px ridge rgb(20, 75, 52);
 }
