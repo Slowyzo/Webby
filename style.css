@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -9,13 +9,14 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(46, 138, 46);
+    background-color: rgb(20, 75, 52);
     
   }
 
 ul {
     list-style: none;
     margin-right: 20px;
+    font-size: 20px;
     padding: 0px;
     gap: 20px;
     display: flex;
@@ -24,25 +25,24 @@ ul {
 
 
 button {
-    background-color: rgb(0, 78, 0);
-    color: rgb(221, 255, 221);
-    padding: 8px;
+    background-color: rgb(0, 66, 22);
+    padding: 12px;
     margin-top: 6px;
     margin-right: 10px;
     align-self:flex-end;
-    border-style: outset 3;
+    border-style: outset 2;
     border-radius: 10px;
 }
 
 a {
     text-decoration: none;
-    color: rgb(183, 255, 183);
+    color: rgb(221, 255, 221);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 img {
-    border: 1px solid rgb(183, 255, 183);
+    border: 1px solid rgb(221, 255, 221);
     border-radius: 8px;
 }
 
@@ -57,7 +57,7 @@ img {
  .content3text, .box, .boxleft {
     display: flex;
     padding: 4px;
-    gap: 4px;
+    gap: 6px;
     align-items: center;
 }
 
@@ -72,7 +72,7 @@ img {
 
 .header, .footer {
     max-height: 100px;
-    background-color: rgb(46, 138, 46);
+    background-color: rgb(85, 165, 85);
 }
 
 .header {
@@ -85,16 +85,21 @@ img {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 6px;
-    background-color: rgb(46, 138, 46);
-    border-bottom: 5px ridge rgb(2, 80, 2);
+    padding: 16px;
+    padding-right: 20px;
+    background-color: rgb(85, 165, 85);
+    border-bottom: 5px ridge rgb(20, 75, 52);
 
 }
 
 .leftinfo {
     flex-direction: column;
     max-width: 500px;
+    min-width: 200px;
+    max-height: 400px;
+    padding-left: 20px;
     align-items: flex-start;
+    flex: 1, 0, auto;
 }
 
 .title1 {
@@ -115,7 +120,7 @@ img {
     color: rgb(2, 80, 2);
     flex-direction: column;
     padding: 8px;
-    border-bottom: 5px ridge rgb(2, 80, 2);
+    border-bottom: 5px ridge rgb(20, 75, 52);
 }
 
 .title2 {
@@ -130,6 +135,8 @@ img {
     flex-direction: row;
     align-items: center;
     gap: 60px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .froad {
@@ -139,7 +146,7 @@ img {
 
 .content3text {
     background-color: transparent;
-    color: rgb(183, 255, 183);
+    color: rgb(221, 255, 221);
     flex-direction: column;
     align-self: center;
     font-size: 24px;
@@ -164,7 +171,7 @@ img {
 }
 
 .box {
-    background-color: rgb(46, 138, 46);
+    background-color: rgb(85, 165, 85);
     max-width: 900px;
     padding: 30px;
     flex-direction: column;
@@ -177,7 +184,7 @@ img {
 
 .footer {
     justify-content: center;
-    color: rgb(183, 255, 183);
+    color: rgb(221, 255, 221);
     font-weight: bold;
     font-size: 16px;
     padding: 16px;
