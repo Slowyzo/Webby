@@ -4,7 +4,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex: 1;
     background-image: url(./images/c-darkleavesbackground.jpg);
     background-position: left;
     background-repeat: no-repeat;
@@ -29,7 +28,7 @@ button {
     margin-top: 6px;
     margin-right: 10px;
     align-self:flex-end;
-    border-style: outset 2;
+    border-style: outset;
     border-radius: 10px;
 }
 
@@ -65,7 +64,6 @@ img {
 }
 
 .header, .link, .footer {
-    flex: 0, 0, auto;
     flex-direction: row;
 }
 
@@ -79,7 +77,6 @@ img {
 }
 
 .content1 {
-    flex-grow: 1, 1, 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -98,7 +95,7 @@ img {
     max-height: 400px;
     padding-left: 20px;
     align-items: flex-start;
-    flex: 1, 0, auto;
+
 }
 
 .title1 {
